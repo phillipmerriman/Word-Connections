@@ -16,7 +16,26 @@ let thes = "https://www.dictionaryapi.com/api/v3/references/thesaurus/json/"+sea
 let  currentSearch;
 $.ajax({url:currentSearch,method: "GET"})
     .then(function(responce){
-
+        console.log(responce);
         }
     )
     
+
+
+
+    // google api stuffssssss
+// google api main call  https://www.googleapis.com/youtube/v3
+function googleApi(){
+    let youtubeAPI = "https://www.googleapis.com/youtube/v3/videos?part"
+
+    $.ajax({url:youtubeSearch,method: "GET"})
+    .then(function(responce){
+        console.log(responce);
+        }
+    )
+
+}
+
+  //'https://youtube.googleapis.com/youtube/v3/videos?part=firetrucks&chart=mostPopular&key=[YOUR_API_KEY]' 
+
+
